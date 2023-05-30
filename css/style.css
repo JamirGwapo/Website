@@ -49,7 +49,9 @@ body {
 main {
 	margin: auto;
 }
-
+.Year {
+	margin-left: 3rem;
+}
 .image-container {
 	position: relative;
 	display: inline-block;
