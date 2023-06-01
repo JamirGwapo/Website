@@ -26,19 +26,27 @@
           <li><a href="/Bisyo/Yearbook/YearBook.html"><i class="fas fa-address-card"></i>Yearbook</a></li>
         </ul>
     </div>
-    <div class="main_content">
-        <div class="header"></div>  
-        <div class="info">
-          <div class="info1">
-            <img src="/Bisyo/picturesall/picture.jpg" class="picture1" type="image">
-            <p> Maytag ako pa</p>
-          </div>
-          <div></div>
-          <div></div>        
-        </div>
-    </div>
 </div>
 
+  <video id="videoPlayer" controls>
+    <source src="your_video_file_path.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
+  <script>
+    var video = document.getElementById("videoPlayer");
+    video.addEventListener("click", function() {
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.mozRequestFullScreen) { /* Firefox */
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) { /* IE/Edge */
+        video.msRequestFullscreen();
+      }
+    });
+</script>
+  
 </body>
 </html>
